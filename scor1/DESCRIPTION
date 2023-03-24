@@ -1,0 +1,20 @@
+Package: scor1
+Title: Linear and non-linear correlation for microbiome data.
+Version: 0.0.1
+Authors@R: 
+    person("Abhishake", "Lahiri", , "abhishake.lahiri@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-7546-9447"))
+Description: This package calculates Linear and Non-linear correlation for microbiome data with sensitive thresholding.
+Imports: energy,
+         RMThreshold,
+         dplyr,
+         igraph,
+         corrr,
+         reshape2,
+         ape,
+         data.table
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
