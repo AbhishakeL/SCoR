@@ -17,3 +17,17 @@ Install [FastSpar](https://github.com/scwatts/fastspar).
 5. ### Remove the `#` from the first cell in the correlation table and p-value table output from `FastSpar`. ###
 6. Use `scor()` to generate the final output. Please follow example for details of parameter.
 7. Visualise network using `igraph` or `Cytoscape'.
+
+## Flowchart
+```mermaid
+flowchart TD
+    A[/phyloseq object/] --> B[FSprep]
+    B --> C[/Filtered OTU table/]
+    C --> D[FastSpar]
+    D --> E[/Correlation matrix & p-value matrix/]
+    E --> F[scor]
+    C --> F
+    F --> G[igraph object]
+    F --> H[Correlation threshold values]
+    F --> I[Final correlation matrix]
+```
